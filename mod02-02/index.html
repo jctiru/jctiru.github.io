@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<!-- <link rel="stylesheet" type="text/css" href=""> -->
+	<style type="text/css">
+		#submit-review{
+			width: 300px;
+		}
+	</style>
+	<title>Submit Review</title>
+</head>
+<body>
+	<form id="submit-review">
+		<fieldset>
+				<legend>Contact Details:</legend>
+				<label>Name:</label>
+				<input type="text" name="name">
+				<br>
+				<label>Email:</label>
+				<input type="email" name="email">
+		</fieldset>
+		<fieldset>
+			<legend>Your Review:</legend>
+			<!-- drop-down list -->
+			<label>How did you hear about us?</label>
+			<select name="brand" required>
+				<option value="google" selected>Google</option>
+				<option value="facebook">Facebook</option>
+				<option value="instagram">Instagram</option>
+				<option value="ads">Ads</option>
+				<option value="blogs">Blogs</option>
+			</select>
+			<br>
+			<br>
+			<!-- radio button -->
+			<label>Would you visit again?</label>
+			<br>
+			<label><input type="radio" name="answer" value="yes" checked="">Yes</label>
+			<label><input type="radio" name="answer" value="no">No</label>
+			<label><input type="radio" name="answer" value="maybe">Maybe</label>
+			<br>
+			<br>
+			<!-- comments -->
+			<label>Comments:</label>
+			<br>
+			<textarea name="comments" rows="4" cols="30"></textarea>
+			<br>
+			<br>
+			<!-- checkbox -->
+			<label><input type="checkbox" name="sign">Sign me up for email updates</label>
+			<br>
+			<!-- submit -->
+			<input type="submit" name="submit" id="submit" value="Submit review">
+		</fieldset>		
+	</form>
+</body>
+</html>
