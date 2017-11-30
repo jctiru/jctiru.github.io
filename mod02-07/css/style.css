@@ -1,0 +1,111 @@
+
+/* type selector */
+/*p{
+	background-color: yellow;
+}*/
+
+/* id selector */
+/*#para1{
+	background-color: maroon;
+}
+*/
+/* class selector */
+/*.paragraphs{
+	background-color: blue;
+}*/
+
+/* attribute selector*/
+/*[target]{
+	color: green;
+}*/
+/* attribute (with value) selector */
+/*a[target="_blank"]{
+	color: indigo;
+}*/
+
+/* universal selector */
+/*body *{
+	background-color: green;
+}
+*/
+
+/*
+h5 + a{
+	background-color: red;
+}
+
+a + br + a{
+	background-color: green;
+}*/
+
+/* general sibling combinator */
+/*h5 ~ div a {
+	background-color: yellow;
+}*/
+
+/* child selector combinator */
+/*div > a{
+	background-color: blue;
+}
+*/
+/* descendant selector */
+/*div a{
+	background-color: yellow;
+}*/
+
+/* pseudo-class */
+a:link {
+	color: orange;
+	background-color: black;
+}
+
+a:visited {
+	color: yellow;
+	background-color: green;
+}
+
+a:focus {
+	background-color: black;
+	color: red;
+}
+
+a:hover {
+	background-color: blue;
+	color: orange;
+}
+
+a:active,
+h3:active,
+h5:active {
+	background-color: yellow;
+	color: black;
+}
+
+/* :first-child :last-child*/
+/*li:first-child,
+li:last-child {
+	background-color: black;
+	color: yellow;
+}
+
+p:first-child,
+p:last-child {
+	background-color: black;
+	color: yellow;
+}*/
+
+/* end and odd*/
+/*li:nth-child(odd),
+p:nth-child(odd){
+	background-color: black;
+	color: orange;
+}*/
+
+h3,
+h5,
+p,
+li,
+a:link {
+	background-color: black;
+	color: white;
+}
