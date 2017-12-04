@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+/*
+div {
+	padding: 20px;
+}*/
+
+/*p {
+	position: static;
+	margin-left: 50px;
+	margin-top: -20px;
+}*/
+
+input[name="submit"] {
+	margin-left: 20px;
+}
+
+strong {
+	background-color: yellow;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+h1 {
+	background-color: gray;
+	padding: 10px;
+	position: fixed;
+	z-index: 1;
+	width: inherit;
+}
+
+/*main.wrapper > p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+}*/
+
+.grandparent {
+	background-color: skyblue;
+	position: fixed;
+	width: inherit;
+	/*bottom: 50px;*/
+	/*left: 50px;*/
+	bottom: 0px;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.parent {
+	background-color: pink;
+	position: relative;
+}
+
+/*
+ *
+ * Page 3 CSS Rules
+ *
+ */
+
+/* div {
+ 	width: 100px;
+ 	height: 100px;
+ 	border: 1px solid #000;
+ 	position: absolute;
+ 	}*/
+
+.blue {
+	background-color: blue;
+	top: 20px;
+	left: 20px;
+	z-index: 3;
+}
+
+.yellow {
+	background-color: yellow;
+	top: 40px;
+	left: 40px;
+	z-index: 2;
+}
+
+.orange {
+	background-color: orange;
+	top: 60px;
+	left: 60px;
+	z-index: 4;
+}
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;
+}*/
+
+.menu {
+	height: 100px;
+	background-color: #b2d6ff;
+}
+
+.sidebar {
+	height: 300px;
+	background-color: #f09a9d;
+	width: 200px;
+	float: left;
+	width: 20%;
+}
+
+/*
+ *
+ * 
+ *
+ */
+
+.article-image {
+	width: 300px;
+	/*height: 200px;*/
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+}
+
+.content {
+	width: 80%;
+	/*height: 500px;*/
+	background-color: #f5c58e;
+	float: left;
+	padding: 20px;
+}
+
+.footer {
+	/*height: 200px;*/
+	background-color: #d6e9fe;
+	clear: both;
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px;
+	border-radius: 50%;
+	background-image: url('https://lorempixel.com/60/60');
+}
+
+.username {
+	margin-bottom: 15px;
+}
+
+/*h3.username + p {
+	overflow: hidden;
+}*/
+
+/*.page {
+	border: 1px solid red;
+}*/
+
+/*
+*
+* Best-way to clear floats
+*
+*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*
+*
+* Columns
+*
+*/
+
+.column {
+	background-color: #b2d6ff;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	/*border: 1px solid red;*/
+	float: left;
+	padding: 15px;
+	overflow: hidden;
+	position: relative;
+}
+
+/*
+ *
+ *
+ * Managing text-overflow with multiline support
+ *
+ */
+
+ .block-with-text {
+ 	overflow: hidden;
+ 	position: relative;
+ 	line-height: 1.2em;
+ 	max-height: 3.6em;
+ 	text-align: left;
+ 	margin-right: -1em;
+ 	padding-right: 30px;
+ }
+
+ .block-with-text:before {
+ 	content: "...";
+ 	position: absolute;
+ 	right: 17px;
+ 	bottom: 0;
+ }
+
+ .block-with-text:after {
+ 	content: "";
+ 	position: absolute;
+ 	right: 17px;
+ 	width: 1em;
+ 	height: 1em;
+ 	margin-top: 0.2em;
+ 	background-color: #b2d6ff;
+ }
+
+ .read-more {
+ 	position: absolute;
+ 	right: 25px;
+ 	bottom: 25px;
+ }
