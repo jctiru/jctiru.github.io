@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: lightgrey;
+	height: 100%;
+	position: fixed;
+	width: 20%;
+}
+
+header > nav > ul > a > li {
+	background-color: lightblue;
+	text-align: center;
+	/*padding: 1rem 1rem;*/
+	padding: 0.5rem 0;
+	margin: 5px auto;
+	width: 60%;	
+	list-style: none;
+	font-size: 0.7rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin-left: 20%;
+}
+
+div.boxes {
+	height: 50vh;
+}
+
+.avatar {
+	background-color: grey;
+	width: 60%;
+	display: block;
+	margin: 15px auto;
+
+}
+
+.title {
+	width: 60%;
+	height: 30%;
+	border: 3px solid white;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 0.8rem;
+}
+
+#home {
+	background-color: lightblue;
+	height: 80vh;
+	position: relative;
+}
+
+#about {
+	background-color: red;
+}
+
+#services {
+	background-color: skyblue;
+}
+
+#projects {
+	background-color: orange;
+}
+
+#gallery {
+	background-color: yellow;
+}
