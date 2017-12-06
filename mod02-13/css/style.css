@@ -5,25 +5,32 @@
 }
 
 header {
-	background-color: lightgrey;
+	background-color: #00897B;
 	height: 100%;
 	position: fixed;
 	width: 20%;
+	border-right: 1px solid #444;
 }
 
 header > nav > ul > a > li {
 	background-color: lightblue;
 	text-align: center;
-	/*padding: 1rem 1rem;*/
 	padding: 0.5rem 0;
 	margin: 5px auto;
 	width: 60%;	
 	list-style: none;
 	font-size: 1.5vw;
+	border-radius: 5px;
+	font-family: 'Roboto Slab', serif;
+}
+
+header > nav > ul > a > li:hover {
+	color: green;
 }
 
 a {
 	text-decoration: none;
+	color: #111;
 }
 
 main {
@@ -35,19 +42,25 @@ div.boxes {
 }
 
 .img-container {
-	/*background-color: grey;*/
-}
-
-.avatar {
 	background-color: grey;
 	width: 60%;
-	display: block;
+	padding-bottom: 60%;
+	position: relative;
 	margin: 15px auto;
 }
 
+.avatar {
+	width: 100%;
+	display: block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
 .title {
-	width: 60%;
-	height: 30%;
+	width: 70%;
+	height: 40%;
 	border: 3px solid white;
 	transform: translate(-50%, -50%);
 	top: 50%;
@@ -61,24 +74,38 @@ div.boxes {
 	overflow: hidden;
 }
 
+.title > h1 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.title > p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.boxes p {
+	font-size: 2vw;
+	font-family: 'Raleway', sans-serif;
+	padding: 2vw;
+}
+
 #home {
-	background-color: lightblue;
-	height: 100vh;
+	background-color: #4DD0E1;
+	height: 80vh;
 	position: relative;
 }
 
 #about {
-	background-color: red;
+	background-color: #66BB6A;
 }
 
 #services {
-	background-color: skyblue;
+	background-color: #FDD835;
 }
 
 #projects {
-	background-color: orange;
+	background-color: #FF5252;
 }
 
 #gallery {
-	background-color: yellow;
+	background-color: #9068be;
 }
