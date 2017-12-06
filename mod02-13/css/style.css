@@ -19,7 +19,7 @@ header > nav > ul > a > li {
 	margin: 5px auto;
 	width: 60%;	
 	list-style: none;
-	font-size: 0.7rem;
+	font-size: 1.5vw;
 }
 
 a {
@@ -34,12 +34,15 @@ div.boxes {
 	height: 50vh;
 }
 
+.img-container {
+	/*background-color: grey;*/
+}
+
 .avatar {
 	background-color: grey;
 	width: 60%;
 	display: block;
 	margin: 15px auto;
-
 }
 
 .title {
@@ -54,12 +57,13 @@ div.boxes {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	font-size: 0.8rem;
+	font-size: 3vw;
+	overflow: hidden;
 }
 
 #home {
 	background-color: lightblue;
-	height: 80vh;
+	height: 100vh;
 	position: relative;
 }
 
