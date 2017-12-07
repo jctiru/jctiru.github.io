@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #00897B;
+	height: 100%;
+	position: fixed;
+	width: 20%;
+	border-right: 1px solid #444;
+}
+
+header > nav > ul > a > li {
+	background-color: lightblue;
+	text-align: center;
+	padding: 0.5rem 0;
+	margin: 5px auto;
+	width: 60%;	
+	list-style: none;
+	font-size: 1.2em;
+	border-radius: 5px;
+	font-family: 'Roboto Slab', serif;
+}
+
+header > nav > ul > a > li:hover {
+	color: green;
+}
+
+a {
+	text-decoration: none;
+	color: #111;
+}
+
+main {
+	margin-left: 20%;
+}
+
+div.boxes {
+	height: 50vh;
+}
+
+@media only screen and (max-width: 400px){
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 900px){
+
+}
+
+@media only screen and (min-width: 901px) {
+
+}
+
+.img-container {
+	background-color: grey;
+	width: 60%;
+	padding-bottom: 60%;
+	position: relative;
+	margin: 15px auto;
+}
+
+.avatar {
+	width: 100%;
+	display: block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+.title {
+	width: 70%;
+	height: 40%;
+	border: 3px solid white;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.6em;
+	overflow: hidden;
+}
+
+.title > h1 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.title > p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.boxes p {
+	font-size: 1.3em;
+	font-family: 'Raleway', sans-serif;
+	padding: 2vw;
+}
+
+#home {
+	background-color: #4DD0E1;
+	height: 80vh;
+	position: relative;
+}
+
+#about {
+	background-color: #66BB6A;
+}
+
+#services {
+	background-color: #FDD835;
+}
+
+#projects {
+	background-color: #FF5252;
+}
+
+#gallery {
+	background-color: #9068be;
+}
