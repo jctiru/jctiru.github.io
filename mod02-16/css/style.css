@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+}
+nav, section, footer {
+	padding: 30px;
+	box-sizing: border-box;
+}
+nav {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 200px;
+}
+main {
+	margin-left: 200px;
+	position: relative;
+}
+#banner {
+	background: skyblue;
+	height: 700px;
+	position: relative;
+}
+#about {
+	background: indianred;
+	height: 700px;
+}
+#services {
+	background: midnightblue;
+	height: 300px;
+}
+#projects {
+	background: crimson;
+	height: 300px;
+}
+#gallery {
+	background: orange;
+	height: 400px;
+}
+footer {
+	background: green;
+	height: 50px;
+}
+.logo {
+	width: 100%;
+	height: 140px;
+	background: darkgrey;
+	margin:  auto;
+}
+ul {
+	padding-left: 0;
+}
+ul > li {
+	list-style-type: none;
+    line-height: 3em;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+.hero {
+	border: 5px solid white;
+	width: 40%;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 3em;
+	color: white;
+}
+small {
+	color: white;
+}
+
+#toggleIcon,
+#toggleIcon1 {
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left: 200px;
+	padding: 15px;
+	z-index: 1;
+	color: white;
+	font-size: 2em;
+}
+#toggleIcon1 {
+	left: 0;
+}
+
+.move {
+	width: -200px;
+}
