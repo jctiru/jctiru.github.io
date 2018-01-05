@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample jQuery</title>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <style type="text/css">
+    div {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        background-color: #aaa;
+        padding: 50px 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="h1">Sample jQuery</h1>
+        <button id="btnToggle">Toggle</button>
+        <input type="text" name="" id="inputBox">
+        <button id="btnChange">Change</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <button id="btnChangePic">Next</button>
+        <button id="btnRandomPic">Random</button>
+        <br>
+        <img height=300 id="image" src="asuna.png">
+    </div>
+    <script type="text/javascript">
+    // Toggle Header
+    $('#btnToggle').click(function() {
+        $('#h1').fadeToggle(1000);
+    });
+    // Change Header
+    $('#btnChange').click(function() {
+        var input = $('#inputBox').val();
+        $('#h1').html(input);
+    });
+    // Change Picture
+    var pictureArray = ['asuna.png', 'deadpool.png', 'nero.png', 'kirito.png', 'mei.png', 'rathalos.png', 'shiro.png', 'zinogre.png']
+    var i = 0;
+    var pictureElement = $('#image');
+    $('#btnChangePic').click(function(){
+    	if (i < pictureArray.length -1){
+    		i++;
+    	} else {
+    		i = 0;
+    	}
+    	pictureElement.fadeOut(function(){
+    		pictureElement.attr('src', pictureArray[i]);
+    		pictureElement.fadeIn();
+    	});
+    });
+    // Random Picture
+    $('#btnRandomPic').click(function(){
+    	var randomNumber = randomIntFromInterval(0, pictureArray.length - 1);
+    	pictureElement.fadeOut(function(){
+    		pictureElement.attr('src', pictureArray[randomNumber]);
+    		pictureElement.fadeIn();
+    	});
+    	
+    });
+    function randomIntFromInterval(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    </script>
+</body>
+
+</html>

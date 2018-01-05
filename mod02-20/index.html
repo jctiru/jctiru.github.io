@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample JS Day 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Sample JS Day 2</h1>
+        <p>Enter a number in the input box, and evaluate if the number is a multiple of 3 AND 5. If not, check if it's a muliptle of 3, OR a multiple of 5.</p>
+        <input id="input" type="number" name="">
+        <br>
+        <button onclick="evaluateInput()">Click Me!</button>
+        <br>
+        <input id="output" type="text" name="" disabled="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>BMI Classification</h2>
+        <label>Weight: </label>
+        <input id="inputWeight" type="number" name="">
+        <select id="optionWeight">
+            <option>Kg</option>
+            <option>Lbs</option>
+        </select>
+        <br>
+        <label>Height: </label>
+        <input id="inputHeight" type="number" name="">
+        <select id="optionHeight">
+            <option>M</option>
+            <option>In</option>
+        </select>
+        <br>
+        <button onclick="evaluateBMI()">Click Me!</button>
+        <br>
+        <input id="outputBMI" type="text" name="" disabled="">
+    </div>
+    <div id="myDiv"></div>
+    <div>
+        <input type="number" name="" id="loopInput">
+        <button onclick="goLoop()">Go Loop!</button>
+        <br>
+        <div id="myDiv2"></div>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    var targetDiv = document.getElementById("myDiv");
+    for (let x = 0; x < 5; x++) {
+        for (let y = 0; y < 5; y++) {
+            targetDiv.innerHTML += "* ";
+        }
+        targetDiv.innerHTML += "<br>";
+    }
+
+
+    function goLoop() {
+        var targetDiv2 = document.getElementById("myDiv2");
+        var loopNum = parseInt(document.getElementById("loopInput").value);
+        targetDiv2.innerHTML = "";
+        for (let x = 0; x < loopNum; x++) {
+            for (let y = 0; y < loopNum; y++) {
+                targetDiv2.innerHTML += "* ";
+            }
+            targetDiv2.innerHTML += "<br>";
+        }
+    }
+    // var colors = [
+    //     "Red",
+    //     "Orange",
+    //     "Yellow",
+    //     "Green",
+    //     "Violet",
+    //     "Indigo",
+    //     "Blue"
+    // ];
+    // var rainbowHTML = "<ul>";
+    // var rainbow = "";
+    // for (let x = 0; x < colors.length; x++) {
+    // 	rainbow += colors[x] + "\n";
+    // 	rainbowHTML += "<li>" + colors[x] + "</li>";
+    // }
+    // rainbowHTML += "</ul>";
+    // document.getElementById("myDiv").innerHTML = rainbowHTML;
+    // alert(rainbow);
+    // var oddSum = 0;
+    // var evenSum = 0;
+    // for (let x = 1; x <= 50; x++) {
+    //     if (x % 2 == 0) {
+    //         evenSum += x;
+    //     } else {
+    //         oddSum += x;
+    //     }
+    // }
+    //alert("Oddsum = " + oddSum + "\nEvensum = " + evenSum);
+    </script>
+</body>
+
+</html>
